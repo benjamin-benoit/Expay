@@ -17,6 +17,7 @@
     "expo-permissions": "^6.0.0",
     "formik": "^1.5.8",
     "graphql": "^14.5.4",
+    "module-resolver": "^1.0.0",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
     "react-native": "0.59.10",
