@@ -4,7 +4,7 @@ import { ApolloProvider } from '@apollo/react-hooks';
 import RootNavigator from './src/navigator';
 
 const client = new ApolloClient({
-  uri: 'http://ff54b972.eu.ngrok.io',
+  uri: 'https://54db299f.ngrok.io/',
 });
 
 const App = () => (

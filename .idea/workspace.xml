@@ -2,30 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/expayFront/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/.buckconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/apollo/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/components/Input.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/components/Separator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/constants/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/navigator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Animations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Camera.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Contacts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Forms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Notifications.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/UserFormik.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/babel.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +153,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568036099063</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add stack navigator in expayFront">
+      <created>1568036246650</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1568036246650</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +185,7 @@
     <MESSAGE value="bug category" />
     <MESSAGE value="remove expayFront" />
     <MESSAGE value="add expayFront" />
-    <option name="LAST_COMMIT_MESSAGE" value="add expayFront" />
+    <MESSAGE value="add stack navigator in expayFront" />
+    <option name="LAST_COMMIT_MESSAGE" value="add stack navigator in expayFront" />
   </component>
 </project>

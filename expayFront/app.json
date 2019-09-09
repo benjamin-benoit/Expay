@@ -1,8 +1,8 @@
 {
-  "name": "efreibook",
-  "displayName": "efreibook",
+  "name": "expayFront",
+  "displayName": "expayFront",
   "expo": {
-    "name": "efreibook",
+    "name": "expayFront",
     "slug": "expo-template-bare",
     "privacy": "unlisted",
     "sdkVersion": "34.0.0",
