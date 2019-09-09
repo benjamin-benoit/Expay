@@ -11,11 +11,11 @@ import * as Yup from 'yup';
 
 const Screen = ({ navigation }) => {
 	const userId = navigation.getParam('id')
-	const { loading, error, data } = useQuery(queries.GET_USER, {
-		variables: {
-			id: userId
-		}
-	});
+	// const { loading, error, data } = useQuery(queries.GET_PRODUCT, {
+	// 	variables: {
+	// 		id: productId
+	// 	}
+	// });
 	const [editUser, {
 		loading: mutationLoading,
 		error: mutationError,
@@ -43,17 +43,17 @@ const Screen = ({ navigation }) => {
 				validateOnChange={false}
 				validateOnBlur={false}
 				enableReinitialize={true}
-				initialValues={data.user}
+				// initialValues={data.user}
 				onSubmit={onSubmit}
 				validationSchema={validationSchema}
 			>
 				{({ values, errors, handleChange, setFieldValue, handleSubmit }) => (
 					<>
 						<Input
-							placeholder="Prénom"
-							value={values.firstName}
-							error={errors.firstName}
-							onChangeText={handleChange('firstName')}
+							placeholder="Nom"
+							value={values.name}
+							error={errors.name}
+							onChangeText={handleChange('name')}
 						/>
 						<Separator />
 						<Input
@@ -79,4 +79,5 @@ export default Screen;
 const Container = styled.View`
 	align-items: center;
 	justify-content: center;
+	margin-top: 50px;
 `
