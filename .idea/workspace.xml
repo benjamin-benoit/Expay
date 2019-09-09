@@ -2,7 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/expayFront/.babelrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/.buckconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/apollo/mutations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/components/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/components/Separator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/constants/colors.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/navigator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Animations.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Camera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Contacts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Forms.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/Notifications.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/User.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/expayFront/src/screens/UserFormik.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/babel.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/babel.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/package.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +46,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1QaiIhKane232hwzvxtWRUMFlvK" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -32,7 +62,10 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/expayBack/src/data" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -126,7 +159,21 @@
       <option name="project" value="LOCAL" />
       <updated>1568032857941</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="remove expayFront">
+      <created>1568036027199</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1568036027199</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add expayFront">
+      <created>1568036099063</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1568036099063</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,6 +196,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="add  schema category product user" />
     <MESSAGE value="bug category" />
-    <option name="LAST_COMMIT_MESSAGE" value="bug category" />
+    <MESSAGE value="remove expayFront" />
+    <MESSAGE value="add expayFront" />
+    <option name="LAST_COMMIT_MESSAGE" value="add expayFront" />
   </component>
 </project>
