@@ -28,23 +28,3 @@ export const SEARCH_USER = gql`
     }
   }
 `
-
-
-export const SEARCH_PRODUCT = gql`
-  query product($q: ID!) {
-    search(q: $q) {
-      id
-      name
-      price
-    }
-  }
-`
-
-
-export const GET_PRODUCT = gql`
-  {
-    pproducts {
-      name
-    }
-  }
-`
