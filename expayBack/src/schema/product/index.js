@@ -3,8 +3,8 @@ import typeDefs from './typedefs'
 import resolvers from './resolvers'
 
 const schema = makeExecutableSchema({
-  typeDefs: [typeDefs],
-  resolvers,
-});
+    typeDefs: [typeDefs],
+    resolvers,
+})
 
 export default schema

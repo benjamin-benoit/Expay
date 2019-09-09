@@ -24,11 +24,15 @@ const typeDefs = /* GraphQL */ `
     id: ID!
     firstName: String!
     lastName: String!
+    country: String!
+    phoneNumber: String!
   }
 
   input EditUserInput {
     firstName: String
     lastName: String
+    country: String
+    phoneNumber: String
   }
 
   type StoreUserExpoTokenResponse {

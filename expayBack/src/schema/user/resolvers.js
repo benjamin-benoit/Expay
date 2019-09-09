@@ -1,5 +1,6 @@
 import users from '~/data/users'
 import Expo from 'expo-server-sdk';
+
 let expo = new Expo();
 
 const resolvers = {
