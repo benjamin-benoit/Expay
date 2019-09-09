@@ -1,5 +1,5 @@
 // NOTE : User type imported from types folder
-
+import {category} from '../category/typedefs'
 const typeDefs = /* GraphQL */ `
   schema {
     query: Query
@@ -24,15 +24,16 @@ const typeDefs = /* GraphQL */ `
     Price: String!
     userID: String!
     img: String!
-    idCategory: String!
+    category: Category
   }
 
   input EditProductInput {
     name: String
     price: String
     img: String
+    idCategory: ID!
   }
-
+ 
 `
 
-export default typeDefs
+export default () =>  [category, typeDefs]
