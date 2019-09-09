@@ -5,9 +5,7 @@ export const EDIT_USER = gql`
     editUser(id: $id, data: $data) {
       id
 			firstName
-      lastName
-      country
-      phoneNumber
+			lastName
     }
   }
 `;

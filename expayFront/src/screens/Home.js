@@ -1,13 +1,13 @@
-import React, {useState, useEffect} from 'react';
-import {ScrollView, View, Text, Button, TextInput, StyleSheet, FlatList, TouchableOpacity} from 'react-native';
+import React, {useState} from 'react';
+import {FlatList, Text, TouchableOpacity} from 'react-native';
 import styled from 'styled-components';
 import {useQuery} from '@apollo/react-hooks';
-import * as queries from '../apollo/queries'
-import Input from '~/components/Input'
-import Separator from '~/components/Separator'
+import * as queries from '~/apollo/queries';
+import Input from '~/components/Input';
+import Separator from '~/components/Separator';
 
 const Screen = ({navigation}) => {
-    const [q, setQ] = useState('')
+    const [q, setQ] = useState('');
     const {loading, error, data} = useQuery(queries.SEARCH_USER, {
         variables: {
             q: q
