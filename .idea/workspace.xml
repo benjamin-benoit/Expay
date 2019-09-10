@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/expayFront/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/src/navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/navigator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +42,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/expayBack/src/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
@@ -96,6 +97,7 @@
       <updated>1568015029549</updated>
       <workItem from="1568015032214" duration="15000" />
       <workItem from="1568015059430" duration="7083000" />
+      <workItem from="1568048744879" duration="1788000" />
     </task>
     <task id="LOCAL-00001" summary="add  schema category product user">
       <created>1568017970610</created>

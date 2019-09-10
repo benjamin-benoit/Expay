@@ -17,10 +17,10 @@ const HomeStack = createStackNavigator({
   },
   User: {
     screen: UserScreen,
-  },
-  UserFormik: {
-    screen: UserFormikScreen,
-  },
+   },
+  // UserFormik: {
+  //   screen: UserFormikScreen,
+  // },
 }, {
   initialRouteName: 'Home',
 });
@@ -29,21 +29,21 @@ const TabNavigator = createBottomTabNavigator({
   Home: {
     screen: HomeStack
   },
-  Contacts: {
-    screen: ContactsScreen,
-  },
-  Camera: {
-    screen: CameraScreen,
-  },
-  Notifications: {
-    screen: NotificationsScreen,
-  },
-  Animations: {
-    screen: AnimationsScreen,
-  },
-  Forms: {
-    screen: FormsScreen,
-  },
+  // Contacts: {
+  //   screen: ContactsScreen,
+  // },
+  // Camera: {
+  //   screen: CameraScreen,
+  // },
+  // Notifications: {
+  //   screen: NotificationsScreen,
+  // },
+  // Animations: {
+  //   screen: AnimationsScreen,
+  // },
+  // Forms: {
+  //   screen: FormsScreen,
+  // },
 }, {
   initialRouteName: 'Home',
 });

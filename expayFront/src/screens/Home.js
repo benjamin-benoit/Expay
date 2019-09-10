@@ -18,7 +18,7 @@ const Screen = ({ navigation }) => {
     <Input
       value={q}
       onChangeText={v => setQ(v)}
-      placeholder="Rechercher une personne..."
+      placeholder="Rechercher un bien..."
     />
     <Separator />
       <Container>
@@ -43,7 +43,7 @@ const Screen = ({ navigation }) => {
   );
 }
 Screen.navigationOptions = {
-  title: 'Accueil'
+  title: 'Liste des Biens'
 }
 export default Screen;
 
