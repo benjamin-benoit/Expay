@@ -11,7 +11,7 @@ export const GET_USERS = gql`
 export const GET_CATEGORIES = gql`
   {
       categories {
-        name
+          name
       }
   }
 `

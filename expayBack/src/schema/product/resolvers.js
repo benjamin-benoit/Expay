@@ -12,6 +12,24 @@ const resolvers = {
         product: async (obj, args, ctx, info) => {
             return  product.find((product) => product.id === args.id)
         },
+        productByUserID: async (obj, args, ctx, info) => {
+            const tab = [];
+            product.find((product) => {
+                if (product.userId === args.userId) {
+                    tab.push(product)
+                }
+            });
+            return tab;
+        },
+        productByCategory: async (obj, args, ctx, info) => {
+            const tab = [];
+            product.find((product) => {
+                if (product.idCategory === args.idCategory) {
+                    tab.push(product)
+                }
+            });
+            return tab;
+        },
         searchProduct: async (obj, args, ctx, info) => {
             const {q} = args;
             return product.filter(({price}) => {
@@ -30,8 +48,9 @@ const resolvers = {
             const index = product.findIndex((product) => product.id === args.id);
             product[index] = {
                 ...product[index],
-                firstName: data.firstName || product[index].firstName,
-                lastName: data.lastName || product[index].lastName,
+                name: data.name || product[index].name,
+                price: data.price || product[index].price,
+                userId: data.userId || product[index].userId
             }
             return product.find((product) => product.id === args.id)
         },

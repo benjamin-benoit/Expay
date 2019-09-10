@@ -10,6 +10,8 @@ const typeDefs = /* GraphQL */ `
     products: [Product!]!
     product(id: ID!): Product
     searchProduct(q: String!): [Product!]!
+    productByUserID(userId: String!): [Product]
+    productByCategory(idCategory: String!): [Product]
   }
 
   type Mutation {

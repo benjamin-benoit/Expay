@@ -1,5 +1,5 @@
-import React from 'react'
-import {Button, View} from 'react-native'
+import React, {useState} from 'react'
+import {Button, Text, View} from 'react-native'
 import styled from 'styled-components'
 import {useMutation, useQuery} from '@apollo/react-hooks';
 import * as queries from '~/apollo/queries'
@@ -17,17 +17,14 @@ const Screen = ({ navigation }) => {
 			id: productId
 		}
 	});
-
+	const [valuePicker, onValueChange]= useState(data.product.category.name);
 	const {loading: load, error: err, data: data2} = useQuery(queries.GET_CATEGORIES);
-	console.log("OK")
-	console.log(data2);
-
 	const [editProduct, {
 		loading: mutationLoading,
 		error: mutationError,
 		data: mutationData
 	}] = useMutation(mutations.EDIT_PRODUCT);
-	const onSubmit = async ({ name, price, userID, img, category }) => {
+	const onSubmit = async ({ name, price, userId, img, category }) => {
 		await editProduct({
 			variables: {
 				id: productId,
@@ -35,7 +32,7 @@ const Screen = ({ navigation }) => {
 					id: productId,
 					name,
 					price,
-					userID,
+					userId,
 					img,
 					category
 				}
@@ -83,13 +80,28 @@ const Screen = ({ navigation }) => {
 							onChangeText={handleChange('img')}
 						/>
 						<Separator />
-						<Picker selectedValue={values.category.name}>
-							<Picker.Item label="Java" value="java" />
-							<Picker.Item label="JavaScript" value="js" />
+						{load && <Text>{'Loading...'}</Text>}
+						{err && <Text>{`Error! ${err.message}`}</Text>}
+						{data2 &&
+
+						<Picker
+							selectedValue={valuePicker}
+							mode="dropdown"
+							onValueChange={onValueChange.bind(this)}
+						>
+							{!load && !err && (
+								data2.categories.map((item) =>
+									(
+										<Picker.Item key={item.id} label={item.name} value={item.name}/>
+									)
+								))
+							}
 						</Picker>
+						}
 						<Separator />
 						<View style={{ height: 10 }} />
-						<Button title={mutationLoading ? '...' : 'OK'} onPress={handleSubmit} disabled={mutationLoading} />
+						<Button title={mutationLoading ? '...' : 'Valider'} onPress={handleSubmit}
+								disabled={mutationLoading}/>
 					</>
 				)}
 			</Formik>
@@ -97,7 +109,7 @@ const Screen = ({ navigation }) => {
 	)
 }
 Screen.navigationOptions = {
-	title: `Modifier le Produit  `
+	title: `Modifier le Produit`
 }
 export default Screen;
 
