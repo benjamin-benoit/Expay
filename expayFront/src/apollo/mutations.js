@@ -10,6 +10,31 @@ export const EDIT_USER = gql`
   }
 `;
 
+export const EDIT_PRODUCT = gql`
+  mutation editUser($id: ID!, $data: EditProductInput!) {
+    editUser(id: $id, data: $data) {
+      id
+			name
+      price
+      userID
+      img
+      category
+    }
+  }
+`;
+
+export const ADD_PRODUCT = gql`
+  mutation addProduct($data: AddProductInput!) {
+    editUser(data: $data) {
+			name
+      price
+      userID
+      img
+      category
+    }
+  }
+`;
+
 export const STORE_USER_EXPO_TOKEN = gql`
   mutation storeUserExpoToken($token: String!) {
     storeUserExpoToken(token: $token) {

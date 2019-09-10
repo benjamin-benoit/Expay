@@ -1,7 +1,7 @@
 import React from 'react';
 import HomeScreen from './screens/Home';
 import UserScreen from './screens/User';
-import AddProduct from './screens/AddProduct'
+import EditProduct from './screens/EditProduct'
 import {createAppContainer} from "react-navigation";
 import {createStackNavigator} from 'react-navigation-stack';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
@@ -21,8 +21,8 @@ const TabNavigator = createBottomTabNavigator({
   Home: {
     screen: HomeStack
   },
-  AddProduct: {
-    screen: AddProduct,
+  EditProduct: {
+    screen: EditProduct,
   },
 }, {
   initialRouteName: 'Home',
