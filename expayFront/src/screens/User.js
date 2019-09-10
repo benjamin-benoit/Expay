@@ -51,7 +51,7 @@ const Screen = ({ navigation }) => {
 	)
 }
 Screen.navigationOptions = {
-  title: 'Éditer une personne'
+  title: 'Mon profil'
 }
 export default Screen;
 

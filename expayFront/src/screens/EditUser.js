@@ -11,51 +11,47 @@ import * as Yup from 'yup';
 import {Picker} from "native-base";
 
 const Screen = ({ navigation }) => {
-	const productId = navigation.getParam('id')
-	const { loading, error, data } = useQuery(queries.GET_PRODUCT, {
+	const userId = navigation.getParam('id')
+	const { loading, error, data } = useQuery(queries.GET_USER, {
 		variables: {
-			id: productId
+			id: userId
 		}
 	});
+	console.log(data)
 
-	const {loading: load, error: err, data: data2} = useQuery(queries.GET_CATEGORIES);
-	console.log("OK")
-	console.log(data2);
-
-	const [editProduct, {
+	const [editUser, {
 		loading: mutationLoading,
 		error: mutationError,
 		data: mutationData
-	}] = useMutation(mutations.EDIT_PRODUCT);
-	const onSubmit = async ({ name, price, userID, img, category }) => {
-		await editProduct({
+	}] = useMutation(mutations.EDIT_USER);
+	const onSubmit = async ({ firstName, lastName, country, phoneNumber }) => {
+		await editUser({
 			variables: {
-				id: productId,
+				id: userId,
 				data: {
-					id: productId,
-					name,
-					price,
-					userID,
-					img,
-					category
+					id: userId,
+					firstName,
+					lastName,
+					country,
+					phoneNumber
 				}
 			},
 		});
 		navigation.goBack()
 	}
 	const validationSchema = Yup.object().shape({
-		name: Yup.string().required('Le nom du produit est requis'),
-		price: Yup.string().required('Le prix est requis'),
-		img: Yup.string().required('La photo est requise'),
-		category: Yup.string().required('La catégorie est requise')
+		firstName: Yup.string().required('Le nom du produit est requis'),
+		lastName: Yup.string().required('Le prix est requis'),
+		country: Yup.string().required('La photo est requise'),
+		phoneNumber: Yup.string().required('La catégorie est requise')
 	})
 	return (
-		<Containers>
+		<Container>
 			<Formik
 				validateOnChange={false}
 				validateOnBlur={false}
 				enableReinitialize={true}
-				initialValues={data.product}
+				initialValues={data.user}
 				onSubmit={onSubmit}
 				validationSchema={validationSchema}
 			>
@@ -63,46 +59,47 @@ const Screen = ({ navigation }) => {
 					<>
 
 						<Input
+							placeholder="Prénom"
+							value={values.firstName}
+							error={errors.firstName}
+							onChangeText={handleChange('firstName')}
+						/>
+						<Separator />
+						<Input
 							placeholder="Nom"
-							value={values.name}
-							error={errors.name}
-							onChangeText={handleChange('name')}
+							value={values.lastName}
+							error={errors.lastName}
+							onChangeText={handleChange('lastName')}
 						/>
 						<Separator />
 						<Input
-							placeholder="Prix"
-							value={values.price}
-							error={errors.price}
-							onChangeText={handleChange('price')}
+							placeholder="Pays"
+							value={values.country}
+							error={errors.country}
+							onChangeText={handleChange('country')}
 						/>
 						<Separator />
 						<Input
-							placeholder="img"
-							value={values.img}
-							error={errors.img}
-							onChangeText={handleChange('img')}
+							placeholder="Numéro de téléphone"
+							value={values.phoneNumber}
+							error={errors.phoneNumber}
+							onChangeText={handleChange('phoneNumber')}
 						/>
-						<Separator />
-						<Picker selectedValue={values.category.name}>
-							<Picker.Item label="Java" value="java" />
-							<Picker.Item label="JavaScript" value="js" />
-						</Picker>
 						<Separator />
 						<View style={{ height: 10 }} />
 						<Button title={mutationLoading ? '...' : 'OK'} onPress={handleSubmit} disabled={mutationLoading} />
 					</>
 				)}
 			</Formik>
-		</Containers>
+		</Container>
 	)
 }
 Screen.navigationOptions = {
-	title: `Modifier le Produit  `
+	title: `Modifier le Produit `
 }
 export default Screen;
 
 const Container = styled.View`
 	align-items: center;
 	justify-content: center;
-	margin-top: 50px;
 `

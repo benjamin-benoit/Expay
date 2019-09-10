@@ -32,6 +32,23 @@ export const GET_PRODUCTS = gql`
   }
 `
 
+export const GET_PRODUCT_BY_USER_ID = gql`
+  query product($id: ID!) {
+    productByUserID(userId: $id) {
+      id
+      name
+      price
+      userId
+      img
+      details
+      category {
+        id
+        name
+      }
+    }
+  }
+`
+
 export const GET_PRODUCT = gql`
   query product($id: ID!) {
     product(id: $id) {
@@ -54,6 +71,8 @@ export const GET_USER = gql`
       id
       firstName
       lastName
+      country
+      phoneNumber
     }
   }
 `
