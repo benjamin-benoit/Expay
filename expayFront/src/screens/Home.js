@@ -1,20 +1,15 @@
 import React, {useState} from 'react';
-import {FlatList, Image, Text, TouchableOpacity} from 'react-native';
+import {Dimensions, FlatList, Image, Text, TouchableOpacity} from 'react-native';
 import styled from 'styled-components';
 import {useQuery} from '@apollo/react-hooks';
 import * as queries from '~/apollo/queries'
 import Input from '~/components/Input'
 import Separator from '~/components/Separator'
 import {Card} from 'native-base';
-import { Dimensions } from 'react-native'
 
 const Screen = ({ navigation }) => {
-  const [q, setQ] = useState('')
-  const { loading, error, data } = useQuery(queries.GET_PRODUCTS, {
-    // variables: {
-    //   q: q
-    // }
-  });
+  const [q, setQ] = useState('');
+  const { loading, error, data } = useQuery(queries.GET_PRODUCTS, {});
   return (
     <>
     <Input
@@ -31,15 +26,15 @@ const Screen = ({ navigation }) => {
                 data={data.products}
                 numColumns={2}
                 renderItem={({item: {id, name, price, category, img}}) => (
-                    <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', {id})}>
-                      <Card>
-                        <Images
-                                source={{uri: `${img}`}}/>
-                        <Text>Nom: {name}</Text>
-                        <Text>Prix: {price}</Text>
-                        <Text>Type: {category.name}</Text>
-                      </Card>
-              </TouchableOpacity>
+                      <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', {id})}>
+                        <Card>
+                          <Images source={{uri: `${img}`}}/>
+                          <Text>Nom: {name}</Text>
+                          <Text>Prix: {price}</Text>
+                          <Text>Type: {category.name}</Text>
+                        </Card>
+                      </TouchableOpacity>
+
             )}
                 keyExtractor={({id}) => id}
           />
@@ -61,5 +56,5 @@ width:  ${Dimensions.get('window').width/2};
 	height: ${Dimensions.get('window').height/6};
 `
 const FlatListcusto = styled(FlatList)`
-	margin: 3px;
+  margin: 3px;
 `

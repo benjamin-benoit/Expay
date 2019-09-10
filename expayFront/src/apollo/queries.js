@@ -8,6 +8,13 @@ export const GET_USERS = gql`
   }
 `
 
+export const GET_CATEGORIES = gql`
+  {
+      categories {
+        name
+      }
+  }
+`
 
 export const GET_PRODUCTS = gql`
   {
@@ -41,7 +48,6 @@ export const GET_PRODUCT = gql`
   }
 `
 
-
 export const GET_USER = gql`
   query user($id: ID!) {
     user(id: $id) {
@@ -51,7 +57,6 @@ export const GET_USER = gql`
     }
   }
 `
-
 
 export const SEARCH_USER = gql`
   query xxx($q: String!) {

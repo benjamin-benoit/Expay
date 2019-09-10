@@ -1,6 +1,5 @@
 import React from 'react';
 import HomeScreen from './screens/Home';
-import UserScreen from './screens/User';
 import EditProduct from './screens/EditProduct'
 import ProductDetails from './screens/ProductDetails'
 import {createAppContainer} from "react-navigation";
@@ -11,9 +10,12 @@ const HomeStack = createStackNavigator({
   Home: {
     screen: HomeScreen,
   },
-  User: {
-    screen: UserScreen,
-  }
+  ProductDetails: {
+    screen: ProductDetails,
+  },
+  EditProduct: {
+    screen: EditProduct,
+  },
 }, {
   initialRouteName: 'Home',
 });
@@ -21,13 +23,7 @@ const HomeStack = createStackNavigator({
 const TabNavigator = createBottomTabNavigator({
   Home: {
     screen: HomeStack
-  },
-  EditProduct: {
-    screen: EditProduct,
-  },
-  ProductDetails: {
-    screen: ProductDetails,
-  },
+  }
 }, {
   initialRouteName: 'Home',
 });

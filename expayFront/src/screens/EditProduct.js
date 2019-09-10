@@ -1,13 +1,14 @@
-import React, { useState, useEffect } from 'react'
-import { View, Text, TextInput, Button } from 'react-native'
+import React from 'react'
+import {Button, View} from 'react-native'
 import styled from 'styled-components'
-import { useQuery, useMutation } from '@apollo/react-hooks';
+import {useMutation, useQuery} from '@apollo/react-hooks';
 import * as queries from '~/apollo/queries'
 import * as mutations from '~/apollo/mutations'
 import Input from '~/components/Input'
 import Separator from '~/components/Separator'
-import { Formik } from 'formik';
+import {Formik} from 'formik';
 import * as Yup from 'yup';
+import {Picker} from "native-base";
 
 const Screen = ({ navigation }) => {
 	const productId = navigation.getParam('id')
@@ -16,6 +17,9 @@ const Screen = ({ navigation }) => {
 			id: productId
 		}
 	});
+	const {load, err, data2} = useQuery(queries.GET_CATEGORIES, {});
+
+
 	const [editProduct, {
 		loading: mutationLoading,
 		error: mutationError,
@@ -26,6 +30,7 @@ const Screen = ({ navigation }) => {
 			variables: {
 				id: productId,
 				data: {
+					id: productId,
 					name,
 					price,
 					userID,
@@ -42,6 +47,7 @@ const Screen = ({ navigation }) => {
 		img: Yup.string().required('La photo est requise'),
 		category: Yup.string().required('La catégorie est requise')
 	})
+	console.log(data2);
 	return (
 		<Container>
 			<Formik
@@ -54,6 +60,7 @@ const Screen = ({ navigation }) => {
 			>
 				{({ values, errors, handleChange, setFieldValue, handleSubmit }) => (
 					<>
+
 						<Input
 							placeholder="Nom"
 							value={values.name}
@@ -75,12 +82,10 @@ const Screen = ({ navigation }) => {
 							onChangeText={handleChange('img')}
 						/>
 						<Separator />
-						<Input
-							placeholder="category"
-							value={values.category}
-							error={errors.category}
-							onChangeText={handleChange('category')}
-						/>
+						<Picker selectedValue={values.category.name}>
+							<Picker.Item label="Java" value="java" />
+							<Picker.Item label="JavaScript" value="js" />
+						</Picker>
 						<Separator />
 						<View style={{ height: 10 }} />
 						<Button title={mutationLoading ? '...' : 'OK'} onPress={handleSubmit} disabled={mutationLoading} />
@@ -91,7 +96,7 @@ const Screen = ({ navigation }) => {
 	)
 }
 Screen.navigationOptions = {
-  title: 'Ajouter un produit'
+	title: `Modifier le Produit  `
 }
 export default Screen;
 

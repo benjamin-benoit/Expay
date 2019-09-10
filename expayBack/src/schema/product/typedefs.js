@@ -33,7 +33,7 @@ const typeDefs = /* GraphQL */ `
     price: String
     img: String
     details: String
-    idCategory: ID!
+    
   }
  
 `
