@@ -113,7 +113,7 @@ Screen.navigationOptions = {
 }
 export default Screen;
 
-const Container = styled.View`
+const Containers = styled.View`
 	align-items: center;
 	justify-content: center;
 	margin-top: 50px;
