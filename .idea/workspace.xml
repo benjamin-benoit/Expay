@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/src/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/src/navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/navigator.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/src/screens/ProductDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/ProductDetails.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -169,7 +169,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568097819802</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="screeen list item">
+      <created>1568104877667</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1568104877667</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +203,7 @@
     <MESSAGE value="add expayFront" />
     <MESSAGE value="add stack navigator in expayFront" />
     <MESSAGE value="add native base" />
-    <option name="LAST_COMMIT_MESSAGE" value="add native base" />
+    <MESSAGE value="screeen list item" />
+    <option name="LAST_COMMIT_MESSAGE" value="screeen list item" />
   </component>
 </project>

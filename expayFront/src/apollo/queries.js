@@ -24,6 +24,21 @@ export const GET_PRODUCTS = gql`
   }
 `
 
+export const GET_PRODUCT = gql`
+  query product($id: ID!) {
+    product(id: $id) {
+      name
+      price
+      userId
+      img
+      category {
+        id
+        name
+      }
+    }
+  }
+`
+
 
 export const GET_USER = gql`
   query user($id: ID!) {

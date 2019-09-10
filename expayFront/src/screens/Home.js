@@ -31,7 +31,7 @@ const Screen = ({ navigation }) => {
                 data={data.products}
                 numColumns={2}
                 renderItem={({item: {id, name, price, category, img}}) => (
-                    <TouchableOpacity onPress={() => navigation.navigate('EditProduct', {id})}>
+                    <TouchableOpacity onPress={() => navigation.navigate('ProductDetails', {id})}>
                       <Card>
                         <Images
                                 source={{uri: `${img}`}}/>
@@ -54,6 +54,7 @@ Screen.navigationOptions = {
 export default Screen;
 
 const Container = styled.View`
+flex: 1;
 `
 const Images = styled(Image)`
 width:  ${Dimensions.get('window').width/2};
@@ -61,7 +62,4 @@ width:  ${Dimensions.get('window').width/2};
 `
 const FlatListcusto = styled(FlatList)`
 	margin: 3px;
-`
-const ItemSeparator = styled(Separator)`
-  //margin-left: 15px;
 `
