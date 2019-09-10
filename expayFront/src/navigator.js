@@ -1,15 +1,10 @@
 import React from 'react';
 import HomeScreen from './screens/Home';
 import UserScreen from './screens/User';
-import UserFormikScreen from './screens/UserFormik';
-import CameraScreen from './screens/Camera';
-import ContactsScreen from './screens/Contacts';
-import NotificationsScreen from './screens/Notifications';
-import AnimationsScreen from './screens/Animations'
 import AddProduct from './screens/AddProduct'
-import { createAppContainer } from "react-navigation";
-import { createStackNavigator } from 'react-navigation-stack';
-import { createBottomTabNavigator } from 'react-navigation-tabs';
+import {createAppContainer} from "react-navigation";
+import {createStackNavigator} from 'react-navigation-stack';
+import {createBottomTabNavigator} from 'react-navigation-tabs';
 
 const HomeStack = createStackNavigator({
   Home: {
@@ -17,10 +12,7 @@ const HomeStack = createStackNavigator({
   },
   User: {
     screen: UserScreen,
-   },
-  // UserFormik: {
-  //   screen: UserFormikScreen,
-  // },
+  }
 }, {
   initialRouteName: 'Home',
 });
@@ -32,18 +24,6 @@ const TabNavigator = createBottomTabNavigator({
   AddProduct: {
     screen: AddProduct,
   },
-  // Camera: {
-  //   screen: CameraScreen,
-  // },
-  // Notifications: {
-  //   screen: NotificationsScreen,
-  // },
-  // Animations: {
-  //   screen: AnimationsScreen,
-  // },
-  // Forms: {
-  //   screen: FormsScreen,
-  // },
 }, {
   initialRouteName: 'Home',
 });

@@ -4,8 +4,8 @@
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/navigator.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/navigator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/src/screens/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
