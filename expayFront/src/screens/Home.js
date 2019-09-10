@@ -8,10 +8,10 @@ import Separator from '~/components/Separator'
 
 const Screen = ({ navigation }) => {
   const [q, setQ] = useState('')
-  const { loading, error, data } = useQuery(queries.SEARCH_USER, {
-    variables: {
-      q: q
-    }
+  const { loading, error, data } = useQuery(queries.GET_PRODUCTS, {
+    // variables: {
+    //   q: q
+    // }
   });
   return (
     <>
@@ -26,12 +26,12 @@ const Screen = ({ navigation }) => {
         {error && <Text>{`Error! ${error.message}`}</Text>}
         {!loading && !error && (
           <FlatList
-            data={data.search}
-            renderItem={({ item: { id, firstName, lastName } }) => (
+            data={data.products}
+            renderItem={({ item: { id, name } }) => (
               <TouchableOpacity onPress={() => navigation.navigate('UserFormik', { id })}>
-                <ListItem>
-                  <Text>{[firstName, lastName].join(' ')}</Text>
-                </ListItem>
+                {/* <ListItem> */}
+                  <Text>{name}</Text>
+                {/* </ListItem> */}
               </TouchableOpacity>
             )}
             keyExtractor={({ id }) => id}

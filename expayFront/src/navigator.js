@@ -6,7 +6,7 @@ import CameraScreen from './screens/Camera';
 import ContactsScreen from './screens/Contacts';
 import NotificationsScreen from './screens/Notifications';
 import AnimationsScreen from './screens/Animations'
-import FormsScreen from './screens/Forms'
+import AddProduct from './screens/AddProduct'
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from 'react-navigation-stack';
 import { createBottomTabNavigator } from 'react-navigation-tabs';
@@ -29,9 +29,9 @@ const TabNavigator = createBottomTabNavigator({
   Home: {
     screen: HomeStack
   },
-  // Contacts: {
-  //   screen: ContactsScreen,
-  // },
+  AddProduct: {
+    screen: AddProduct,
+  },
   // Camera: {
   //   screen: CameraScreen,
   // },

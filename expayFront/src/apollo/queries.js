@@ -8,6 +8,16 @@ export const GET_USERS = gql`
   }
 `
 
+
+export const GET_PRODUCTS = gql`
+  {
+    products {
+      name
+    }
+  }
+`
+
+
 export const GET_USER = gql`
   query user($id: ID!) {
     user(id: $id) {
