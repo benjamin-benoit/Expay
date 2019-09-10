@@ -29,7 +29,6 @@ const Screen = ({ navigation }) => {
 			variables: {
 				id: userId,
 				data: {
-					id: userId,
 					firstName,
 					lastName,
 					country,
