@@ -2,7 +2,7 @@ import React from 'react'
 import {Dimensions, Image, Text} from 'react-native'
 import styled from 'styled-components'
 import {useQuery} from '@apollo/react-hooks';
-import {Container} from 'native-base'
+import {Container, Button} from 'native-base'
 import * as queries from '~/apollo/queries'
 
 const Screen = ({ navigation }) => {
@@ -19,6 +19,11 @@ const Screen = ({ navigation }) => {
                 {error && <Text>{`Error! ${error.message}`}</Text>}
                 {!loading && !error && (
 					<>
+						<Button onPress={() => navigation.navigate('EditProduct', {id})}>
+							<Text>
+							Editer le produit
+							</Text>
+						</Button>
 						<Images
 							source={{uri: `${data.product.img}`}}/>
 						<DIV>
