@@ -21,9 +21,9 @@ const typeDefs = /* GraphQL */ `
   type Product {
     id: ID!
     name: String!
-    Price: String!
-    userID: String!
-    img: String!
+    price: String!
+    userId: String!
+    img: String
     category: Category
   }
 

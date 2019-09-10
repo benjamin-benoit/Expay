@@ -12,7 +12,14 @@ export const GET_USERS = gql`
 export const GET_PRODUCTS = gql`
   {
     products {
+      id
       name
+      img
+      price
+      category {
+        id
+        name
+      }
     }
   }
 `
