@@ -45,7 +45,7 @@ Screen.navigationOptions = {
 export default Screen;
 
 const Containers = styled.View`
-	margin: 5px;
+	margin: 5px ;
 	
 `
 const Images = styled(Image)`

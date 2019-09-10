@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from '@apollo/react-hooks';
 import RootNavigator from './src/navigator';
+import SafeAreaView from "react-native-safe-area-view";
 
 const client = new ApolloClient({
     uri: 'http://a0230791.ngrok.io/',
@@ -20,8 +21,11 @@ const App = () => {
     }
 
     return (
+
         <ApolloProvider client={client}>
-            <RootNavigator/>
+            <SafeAreaView style={{flex: 1, backgroundColor: '#fff'}}>
+                <RootNavigator/>
+            </SafeAreaView>
         </ApolloProvider>
     )
 }

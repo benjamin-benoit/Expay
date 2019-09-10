@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/src/data/products.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/data/products.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/apollo/queries.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/screens/ProductDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/ProductDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayFront/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -183,7 +183,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568107186745</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="productDetails">
+      <created>1568107955184</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1568107955184</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
