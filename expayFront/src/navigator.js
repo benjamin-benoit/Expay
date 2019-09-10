@@ -17,10 +17,10 @@ const HomeStack = createStackNavigator({
   },
   User: {
     screen: UserScreen,
-  },
-  UserFormik: {
-    screen: UserFormikScreen,
-  },
+   },
+  // UserFormik: {
+  //   screen: UserFormikScreen,
+  // },
 }, {
   initialRouteName: 'Home',
 });
