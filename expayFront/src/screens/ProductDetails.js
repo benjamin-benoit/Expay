@@ -2,6 +2,7 @@ import React from 'react'
 import {Dimensions, Image, Text} from 'react-native'
 import styled from 'styled-components'
 import {useQuery} from '@apollo/react-hooks';
+import {Container} from 'native-base'
 import * as queries from '~/apollo/queries'
 
 const Screen = ({ navigation }) => {
@@ -13,12 +14,11 @@ const Screen = ({ navigation }) => {
 	});
 	console.log(data)
 	return (
-		<Container>
+		<Containers>
 				{loading && <Text>{'Loading...'}</Text>}
                 {error && <Text>{`Error! ${error.message}`}</Text>}
                 {!loading && !error && (
 					<>
-
 						<Images
 							source={{uri: `${data.product.img}`}}/>
 						<DIV>
@@ -29,9 +29,14 @@ const Screen = ({ navigation }) => {
 							<TextBold>Prix: </TextBold>
 							<Text>{data.product.price}</Text>
 						</DIV>
+
+						<Containers>
+							<TextBold>Details: </TextBold>
+							<Text>{data.product.details}</Text>
+						</Containers>
 					</>
 				)}
-		</Container>
+		</Containers>
 	)
 }
 Screen.navigationOptions = {
@@ -39,10 +44,9 @@ Screen.navigationOptions = {
 }
 export default Screen;
 
-const Container = styled.View`
-	align-items: center;
-	justify-content: center;
-	margin-top: 50px;
+const Containers = styled.View`
+	margin: 5px;
+	
 `
 const Images = styled(Image)`
 width:  ${Dimensions.get('window').width };

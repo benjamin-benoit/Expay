@@ -24,6 +24,7 @@ const typeDefs = /* GraphQL */ `
     price: String!
     userId: String!
     img: String
+    details: String
     category: Category
   }
 
@@ -31,6 +32,7 @@ const typeDefs = /* GraphQL */ `
     name: String
     price: String
     img: String
+    details: String
     idCategory: ID!
   }
  

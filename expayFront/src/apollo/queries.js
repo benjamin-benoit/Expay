@@ -16,6 +16,7 @@ export const GET_PRODUCTS = gql`
       name
       img
       price
+      details
       category {
         id
         name
@@ -31,6 +32,7 @@ export const GET_PRODUCT = gql`
       price
       userId
       img
+      details
       category {
         id
         name
