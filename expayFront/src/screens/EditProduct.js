@@ -17,8 +17,10 @@ const Screen = ({ navigation }) => {
 			id: productId
 		}
 	});
-	const {load, err, data2} = useQuery(queries.GET_CATEGORIES, {});
 
+	const {loading: load, error: err, data: data2} = useQuery(queries.GET_CATEGORIES);
+	console.log("OK")
+	console.log(data2);
 
 	const [editProduct, {
 		loading: mutationLoading,
@@ -47,7 +49,6 @@ const Screen = ({ navigation }) => {
 		img: Yup.string().required('La photo est requise'),
 		category: Yup.string().required('La catégorie est requise')
 	})
-	console.log(data2);
 	return (
 		<Container>
 			<Formik
