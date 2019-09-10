@@ -17,6 +17,7 @@ const resolvers = {
                 return name.toLowerCase().indexOf(q.toLowerCase()) > -1;
             })
         }
+
     }
 };
 
