@@ -14,6 +14,7 @@ const Screen = ({ navigation }) => {
 			id: productId
 		}
 	});
+	
 	return (
 		<Containers>
 				{loading && <Text>{'Loading...'}</Text>}

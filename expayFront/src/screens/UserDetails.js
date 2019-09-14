@@ -1,9 +1,10 @@
 import React from 'react'
-import {Dimensions, Image, ScrollView, Text} from 'react-native'
+import {Dimensions, Image, FlatList, ScrollView, Text, TouchableOpacity} from 'react-native'
 import styled from 'styled-components'
 import {useQuery} from '@apollo/react-hooks';
 import {Button} from 'native-base'
 import * as queries from '~/apollo/queries'
+import {Card} from 'native-base';
 
 const Screen = ({ navigation }) => {
 
@@ -19,7 +20,7 @@ const Screen = ({ navigation }) => {
 		variables: {
 			id: "01c7961f-0a44-4470-9a1e-be3fe5e2706d"
 		}
-    });
+	});
     
     console.log(data2)
     
@@ -45,6 +46,27 @@ const Screen = ({ navigation }) => {
 							</TextBold>
 						</Buttons>
 							<HeaderTitle>Mes annonces: </HeaderTitle>
+
+							{load && <Text>{'Loading...'}</Text>}
+							{err && <Text>{`Error! ${err.message}`}</Text>}
+							{!load && !err && (
+							<FlatListcusto
+								data={data2.productByUserID}
+								numColumns={2}
+								renderItem={({item: {id, name, price, category, img}}) => (
+									<TouchableOpacity onPress={() => navigation.navigate('ProductDetails', {id})}>
+										<Card>
+										<Images source={{uri: `${img}`}}/>
+										<Text>Nom: {name}</Text>
+										<Text>Prix: {price}</Text>
+										<Text>Type: {category.name}</Text>
+										</Card>
+									</TouchableOpacity>
+
+							)}
+								keyExtractor={({id}) => id}
+						/>
+							)}
 					</ScrollView>
 				)}
 		</Containers>
@@ -90,4 +112,12 @@ const Buttons = styled(Button)`
     height: auto;
     margin: auto;
     margin-bottom: 10px;
+`
+const FlatListcusto = styled(FlatList)`
+  margin: 3px;
+`
+
+const Images = styled(Image)`
+width:  ${Dimensions.get('window').width/2};
+	height: ${Dimensions.get('window').height/6};
 `
