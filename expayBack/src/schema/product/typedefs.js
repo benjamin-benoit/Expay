@@ -33,7 +33,6 @@ const typeDefs = /* GraphQL */ `
   input EditProductInput {
     name: String
     price: String
-    img: String
     details: String
     idCategory: String
     

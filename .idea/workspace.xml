@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/src/schema/product/resolvers.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/schema/product/resolvers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/schema/product/typedefs.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/apollo/mutations.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/apollo/mutations.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayFront/src/screens/EditProduct.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayFront/src/screens/EditProduct.js" afterDir="false" />
@@ -98,7 +97,7 @@
       <workItem from="1568015032214" duration="15000" />
       <workItem from="1568015059430" duration="7083000" />
       <workItem from="1568048744879" duration="1788000" />
-      <workItem from="1568461058748" duration="4580000" />
+      <workItem from="1568461058748" duration="7909000" />
     </task>
     <task id="LOCAL-00001" summary="add  schema category product user">
       <created>1568017970610</created>
@@ -226,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568463746655</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="bug edit producct">
+      <created>1568465837812</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1568465837812</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,6 +261,7 @@
     <MESSAGE value="add native base" />
     <MESSAGE value="screeen list item" />
     <MESSAGE value="productDetails" />
-    <option name="LAST_COMMIT_MESSAGE" value="productDetails" />
+    <MESSAGE value="bug edit producct" />
+    <option name="LAST_COMMIT_MESSAGE" value="bug edit producct" />
   </component>
 </project>
