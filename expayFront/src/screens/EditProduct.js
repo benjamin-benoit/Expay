@@ -25,15 +25,15 @@ const Screen = ({ navigation }) => {
 		error: mutationError,
 		data: mutationData
 	}] = useMutation(mutations.EDIT_PRODUCT);
-	const onSubmit = async ({ name, price, userId, img, category }) => {
+	const onSubmit = async ({name, price, details, idCategory}) => {
 		await editProduct({
 			variables: {
 				id: productId,
 				data: {
-					name,
-					price,
-					details,
-					category
+					name: "Iphone XXX4",
+					price: "22",
+					details: "ssasa",
+					idCategory: "4"
 				}
 			},
 		});
@@ -43,7 +43,7 @@ const Screen = ({ navigation }) => {
 		name: Yup.string().required('Le nom du produit est requis'),
 		price: Yup.string().required('Le prix est requis'),
 		details: Yup.string().required('Les details sont requises'),
-		category: Yup.string().required('La catégorie est requise')
+		idCategory: Yup.string().required('La catégorie est requise')
 	})
 	return (
 		<Containers>
@@ -76,7 +76,7 @@ const Screen = ({ navigation }) => {
 							placeholder="Details"
 							value={values.details}
 							error={errors.details}
-							onChangeText={handleChange('price')}
+							onChangeText={handleChange('details')}
 						/>
 						<Separator />
 						<Text> Category</Text>
@@ -89,8 +89,9 @@ const Screen = ({ navigation }) => {
 							onValueChange={onValueChange.bind(this)}
 						>
 							{!load && !err && (
+
 								data2.categories.map((item) => (
-										<Picker.Item key={item.id} label={item.name} value={item.name}/>
+									<Picker.Item key={item.id++} label={item.name} value={item.name}/>
 									)
 								))
 							}

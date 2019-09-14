@@ -50,7 +50,8 @@ const resolvers = {
                 ...product[index],
                 name: data.name || product[index].name,
                 price: data.price || product[index].price,
-                userId: data.userId || product[index].userId
+                details: data.details || product[index].details,
+                idCategory: data.idCategory || product[index].idCategory
             }
             return product.find((product) => product.id === args.id)
         },

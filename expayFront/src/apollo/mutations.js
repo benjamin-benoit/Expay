@@ -4,8 +4,8 @@ export const EDIT_USER = gql`
   mutation editUser($id: ID!, $data: EditUserInput!) {
     editUser(id: $id, data: $data) {
       id
-			firstName
-			lastName
+      firstName
+      lastName
     }
   }
 `;
@@ -15,7 +15,7 @@ export const EDIT_PRODUCT = gql`
     editproduct(id: $id, data: $data) {
       name
       price
-        category
+      idCategory
       details
     }
   }
@@ -24,7 +24,7 @@ export const EDIT_PRODUCT = gql`
 export const ADD_PRODUCT = gql`
   mutation addProduct($data: AddProductInput!) {
     editUser(data: $data) {
-			name
+      name
       price
       userID
       img
