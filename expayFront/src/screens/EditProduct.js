@@ -10,6 +10,7 @@ import {Formik} from 'formik';
 import * as Yup from 'yup';
 import {Picker} from "native-base";
 
+
 const Screen = ({ navigation }) => {
 	const productId = navigation.getParam('id')
 	const { loading, error, data } = useQuery(queries.GET_PRODUCT, {
@@ -29,11 +30,9 @@ const Screen = ({ navigation }) => {
 			variables: {
 				id: productId,
 				data: {
-					id: productId,
 					name,
 					price,
-					userId,
-					img,
+					details,
 					category
 				}
 			},
@@ -43,7 +42,7 @@ const Screen = ({ navigation }) => {
 	const validationSchema = Yup.object().shape({
 		name: Yup.string().required('Le nom du produit est requis'),
 		price: Yup.string().required('Le prix est requis'),
-		img: Yup.string().required('La photo est requise'),
+		details: Yup.string().required('Les details sont requises'),
 		category: Yup.string().required('La catégorie est requise')
 	})
 	return (
@@ -74,24 +73,23 @@ const Screen = ({ navigation }) => {
 						/>
 						<Separator />
 						<Input
-							placeholder="img"
-							value={values.img}
-							error={errors.img}
-							onChangeText={handleChange('img')}
+							placeholder="Details"
+							value={values.details}
+							error={errors.details}
+							onChangeText={handleChange('price')}
 						/>
 						<Separator />
+						<Text> Category</Text>
 						{load && <Text>{'Loading...'}</Text>}
 						{err && <Text>{`Error! ${err.message}`}</Text>}
 						{data2 &&
-
 						<Picker
 							selectedValue={valuePicker}
 							mode="dropdown"
 							onValueChange={onValueChange.bind(this)}
 						>
 							{!load && !err && (
-								data2.categories.map((item) =>
-									(
+								data2.categories.map((item) => (
 										<Picker.Item key={item.id} label={item.name} value={item.name}/>
 									)
 								))
