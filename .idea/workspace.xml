@@ -4,6 +4,8 @@
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayBack/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayBack/node_modules/.cache/@babel/register/.babel.7.6.0.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/node_modules/.cache/@babel/register/.babel.7.6.0.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayBack/node_modules/.yarn-integrity" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/expayBack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayBack/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/index.js" afterDir="false" />
     </list>
@@ -24,7 +26,7 @@
         <entry key="$PROJECT_DIR$" value="Backend" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/expayBack" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -98,7 +100,7 @@
       <workItem from="1568015059430" duration="7083000" />
       <workItem from="1568048744879" duration="1788000" />
       <workItem from="1568461058748" duration="7909000" />
-      <workItem from="1568568535455" duration="5283000" />
+      <workItem from="1568568535455" duration="5925000" />
     </task>
     <task id="LOCAL-00001" summary="add  schema category product user">
       <created>1568017970610</created>
