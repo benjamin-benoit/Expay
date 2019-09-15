@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="63eda761-79a1-4360-a04a-27fda27075da" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/expayBack/node_modules/.cache/@babel/register/.babel.7.6.0.development.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/node_modules/.cache/@babel/register/.babel.7.6.0.development.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayBack/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/expayBack/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/expayBack/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/expayBack/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +24,7 @@
         <entry key="$PROJECT_DIR$" value="Backend" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/expayBack" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -97,7 +98,7 @@
       <workItem from="1568015059430" duration="7083000" />
       <workItem from="1568048744879" duration="1788000" />
       <workItem from="1568461058748" duration="7909000" />
-      <workItem from="1568568535455" duration="4651000" />
+      <workItem from="1568568535455" duration="5283000" />
     </task>
     <task id="LOCAL-00001" summary="add  schema category product user">
       <created>1568017970610</created>
@@ -253,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568577874733</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="search by category">
+      <created>1568578738036</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1568578738036</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
