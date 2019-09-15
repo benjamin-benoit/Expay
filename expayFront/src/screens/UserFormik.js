@@ -10,7 +10,8 @@ import { Formik } from 'formik';
 import * as Yup from 'yup';
 
 const Screen = ({ navigation }) => {
-	const userId = navigation.getParam('id')
+	//const userId = navigation.getParam('id')
+	const userId = "c5e39643-ed5a-4e73-a853-2d282dbaab8d"
 	const { loading, error, data } = useQuery(queries.GET_USER, {
 		variables: {
 			id: userId

@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeScreen from './screens/Home';
 import UserDetails from './screens/UserDetails';
+import UserFormik from './screens/UserFormik';
 import EditUser from './screens/EditUser';
 import EditProduct from './screens/EditProduct';
 import ProductDetails from './screens/ProductDetails';
@@ -21,11 +22,14 @@ const HomeStack = createStackNavigator({
   UserDetails: {
     screen: UserDetails,
   },
+  UserFormik: {
+    screen: UserFormik,
+  },
   EditUser: {
     screen: EditUser,
   },
 }, {
-  initialRouteName: 'Home',
+  initialRouteName: 'UserFormik',
 });
 
 const TabNavigator = createBottomTabNavigator({
