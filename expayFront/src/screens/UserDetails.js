@@ -22,8 +22,6 @@ const Screen = ({ navigation }) => {
 		}
 	});
     
-    console.log(data2)
-    
 	return (
 		<Containers>
 				{loading && <Text>{'Loading...'}</Text>}

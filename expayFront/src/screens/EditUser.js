@@ -17,7 +17,6 @@ const Screen = ({ navigation }) => {
 			id: userId
 		}
 	});
-	console.log(data)
 
 	const [editUser, {
 		loading: mutationLoading,

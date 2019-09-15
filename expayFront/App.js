@@ -5,7 +5,7 @@ import RootNavigator from './src/navigator';
 import SafeAreaView from "react-native-safe-area-view";
 
 const client = new ApolloClient({
-    uri: 'http://894f5cf0.ngrok.io/',
+    uri: 'http://98126681.ngrok.io/'
 });
 
 const App = () => {

@@ -48,6 +48,22 @@ query product($id: String!) {
   }
 }
 `
+export const GET_PRODUCT_BY_CATEGORY = gql`
+query product($idCategory: String!) {
+  productByCategory(idCategory: $idCategory) {
+    id
+    name
+    price
+    userId
+    img
+    details
+    category {
+      id
+      name
+    }
+  }
+}
+`
 
 
 export const GET_PRODUCT = gql`

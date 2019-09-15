@@ -90,7 +90,7 @@ const Screen = ({ navigation }) => {
 						>
 							{!load && !err && (
 								data2.categories.map((item) => (
-									<Picker.Item  key={item.id++} label={item.name} value={item.name}/>
+									<Picker.Item  name="idCategory" key={item.id++} label={item.name} value={item.name}/>
 									)
 								))
 							}

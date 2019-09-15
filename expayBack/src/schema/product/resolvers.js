@@ -23,12 +23,16 @@ const resolvers = {
         },
         productByCategory: async (obj, args, ctx, info) => {
             const tab = [];
+
             product.find((product) => {
+                if (args.idCategory === "") {
+                     tab.push(product)
+                }
                 if (product.idCategory === args.idCategory) {
                     tab.push(product)
                 }
             });
-            return tab;
+             return tab;
         },
         searchProduct: async (obj, args, ctx, info) => {
             const {q} = args;
