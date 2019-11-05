@@ -25,7 +25,7 @@
     "expo-server-sdk": "^3.3.0",
     "graphql-tools": "^4.0.5",
     "graphql-yoga": "^1.18.3",
-    "mongoose": "^5.6.11",
+    "mongoose": "^5.7.5",
     "nodemon": "^1.19.1",
     "uuid": "^3.3.3"
   }
